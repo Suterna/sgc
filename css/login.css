@@ -453,27 +453,31 @@ h6 {
     }
 }
 
-#gtco-about,
+#gtco-banner,
 #gtco-contact,
 #gtco-practice-areas {
-    padding: 7em 0;
+    padding: 10em 0;
     clear: both
 }
 
-#gtco-about .img-shadow {
+#gtco-banner h1 {
+    font-size: 59px;
+}
+
+#gtco-banner .img-shadow {
     position: relative;
     background: #7ed321;
     width: 100%;
     float: left
 }
 
-#gtco-about .img-shadow img {
+#gtco-banner .img-shadow img {
     position: relative;
     top: -20px;
     left: -20px
 }
 
-#gtco-about .heading {
+#gtco-banner .heading {
     position: relative
 }
 
@@ -594,7 +598,10 @@ h6 {
 
 #gtco-footer {
     padding-top: 30px;
-    background: #fafafa
+    background: #fafafa;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
 }
 
 @media screen and (max-width:768px) {
