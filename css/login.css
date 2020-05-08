@@ -164,7 +164,17 @@ h6 {
 }
 
 .gtco-nav ul li.btn-cta a:hover span {
-    background: #8bde2f;
+    background: #8bde2f !important;
+    color: #fff
+}
+
+.gtco-nav ul li.btn-cta a:focus span {
+    background: #8bde2f !important;
+    color: #fff
+}
+
+.gtco-nav ul li.btn-cta a:active span {
+    background: #8bde2f !important;
     color: #fff
 }
 
@@ -454,9 +464,13 @@ h6 {
 }
 
 #gtco-banner,
-#gtco-contact,
 #gtco-practice-areas {
-    padding: 10em 0;
+    padding: 10em 0 0 0;
+    clear: both
+}
+
+#gtco-contact {
+    padding: 1em 0 0 0;
     clear: both
 }
 
@@ -533,17 +547,16 @@ h6 {
     position: relative;
     padding-bottom: 40px;
     font-size: 18px;
-    color: #757575
 }
 
 .heading .sub:after {
     bottom: 0;
-    left: 50%;
-    margin-left: -36px;
+    left: 46%;
+    margin-left: -45px;
     content: "";
     position: absolute;
-    width: 72px;
-    height: 2px;
+    width: 150px;
+    height: 3px;
     background: #7ed321
 }
 
@@ -686,11 +699,6 @@ h6 {
     outline: 0!important
 }
 
-#gtco-contact h3 {
-    color: #fff;
-    font-size: 30px
-}
-
 .row-pb-md {
     padding-bottom: 4em!important
 }
@@ -701,4 +709,73 @@ h6 {
 
 .js .animate-box {
     opacity: 0
+}
+
+#gtco-contact .heading {
+    position: relative;
+}
+
+#gtco-contact .heading .subtle-text {
+    position: absolute;
+    bottom: -1em;
+    left: 0;
+    text-transform: uppercase;
+    font-size: 208px;
+    color: #F8F8F8;
+    font-weight: 900;
+    z-index: -1;
+    line-height: 1;
+}
+
+#gtco-contact .heading .subtle-text span {
+    display: block;
+}
+
+#gtco-contact .form-group {
+    margin-bottom: 30px;
+}
+
+#gtco-contact .form-control {
+    height: 70px;
+    font-size: 18px;
+    box-shadow: none !important;
+    border: 1px solid #cccccc;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #fff;
+}
+
+#gtco-contact textarea {
+    height: inherit !important;
+    resize: vertical;
+}
+
+.btn-primary {
+    background: #7ED321;
+    color: #fff;
+    border: 2px solid #7ED321 !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background: #8bde2f !important;
+    border-color: #8bde2f !important;
+}
+
+.btn-primary.btn-outline {
+    background: transparent;
+    color: #7ED321;
+    border: 2px solid #7ED321;
+}
+
+.btn-primary.btn-outline:hover,
+.btn-primary.btn-outline:focus,
+.btn-primary.btn-outline:active {
+    background: #7ED321;
+    color: #fff;
+}
+
+.btnSubmit {
+    margin: 2em 0 0 0;
 }

@@ -164,7 +164,7 @@ h6 {
 }
 
 .gtco-nav ul li.btn-cta a:hover span {
-    background: #8bde2f;
+    background: #8bde2f !important;
     color: #fff
 }
 
