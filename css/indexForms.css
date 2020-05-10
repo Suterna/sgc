@@ -56,11 +56,6 @@ h6 {
     margin: 0 0 30px 0
 }
 
-h4 {
-    text-align: center;
-    color: red;
-}
-
 ::-webkit-selection {
     color: #fff;
     background: #7ed321
@@ -135,17 +130,34 @@ h4 {
     font-size: 12px;
     padding: 30px 10px;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, .5);
+    color: black;
     font-weight: 400!important;
     -webkit-transition: .5s;
     -o-transition: .5s;
     transition: .5s
 }
 
-.gtco-nav ul li a:active,
-.gtco-nav ul li a:focus,
-.gtco-nav ul li a:hover {
-    color: #fff
+.gtco-tools ul li a {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 500!important;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s
+}
+
+.gtco-tools ul li a:active,
+.gtco-tools ul li a:focus,
+.gtco-tools ul li a:hover {
+    color: rgb(175, 175, 175)
+}
+
+.gtco-tools ul li {
+    margin: 5px;
+    padding: 0px 10px;
+    list-style: none;
+    display: inline
 }
 
 .gtco-nav ul li.btn-cta a {
@@ -287,6 +299,20 @@ h4 {
     bottom: 0
 }
 
+.gtco-tools {
+    margin-left: -28px;
+    position: fixed;
+    width: 101%;
+    font-size: 15px;
+}
+
+.gtco-tools {
+    background: #fafafa;
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .15);
+    -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .15);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .15)
+}
+
 @media screen and (max-width:768px) {
     #gtco-footer .copyright .pull-left,
     #gtco-footer .copyright .pull-right {
@@ -363,4 +389,8 @@ h4 {
 
 .btnSubmit {
     margin: 2em 0 0 0
+}
+
+#sesion {
+    color: #7ed321 !important;
 }

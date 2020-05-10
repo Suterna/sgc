@@ -17,65 +17,57 @@
     <!-- Magnific Popup -->
     <link rel="stylesheet" href="../css/magnific-popup.css">
     <!-- Theme style  -->
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/indexForms.css">
 
     <!-- Modernizr JS -->
     <script src="../js/modernizr-2.6.2.min.js"></script>
 </head>
 
-<body>
+<body onload="inicio();">
 
     <div id="page">
         <nav class="gtco-nav scrolled" role="navigation">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-2 col-xs-12 main-nav">
-                        <div id="gtco-logo"><a href="../index.html" data-nav-section="home">SGC</a></div>
+                        <div id="gtco-logo"><a href="#" data-nav-section="home">SGC</a></div>
                     </div>
                     <div class="col-xs-10 text-right menu-1 main-nav">
                         <ul>
-                            <li class="btn-cta"><a href="../index.html"><span>Home</span></a></li>
+                            Bienvenido
+                            <li id="sesion"></li>
+                            <li class="btn-cta"><a href="../index.html" id="logout"><span>Cerrar sesión</span></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </nav>
 
-        <section id="gtco-banner" data-section="banner" data-stellar-background-ratio="0.5">
-            <div class="overlay"></div>
+        <div style="padding: 5em 0 0 0;" class="gtco-tools">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 col-md-offset-0 text-center heading">
-                        <h1 class="animate-box fadeIn animated-fast sub" data-animate-effect="fadeIn"><b>S</b>istema de <b>G</b>estión de <b>C</b>alidad</h1>
+                    <div class="col-sm-12 col-xs-12">
+                        <ul class="navbar-nav col-sm-12" id="herramientas">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Informes</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Generar</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Consultar</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Capítulos</a>
+                                    <a class="dropdown-item" href="#">Procedimientos</a>
+                                    <a class="dropdown-item" href="#">Documentos</a>
+                                    <a class="dropdown-item" href="#">Versiones</a>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section id="gtco-contact" data-section="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-md-push-3 animate-box fadeIn animated-fast">
-                        <h4 id="respuesta"></h4>
-                        <form>
-                            <div class="form-group">
-                                <h3>Usuario:</h3>
-                                <label for="user" class="sr-only"></label>
-                                <input type="text" name="usuario" class="form-control" placeholder="Introduzca su nombre de usuario" id="usuario">
-                            </div>
-                            <div class="form-group">
-                                <h3>Contraseña:</h3>
-                                <label for="password" class="sr-only"></label>
-                                <input type="password" name="password" class="form-control" placeholder="Introduzca su contraseña" id="password">
-                            </div>
-                            <div class="form-group col-md-12 col-md-push-4 btnSubmit">
-                                <input type="submit" name="intro" value="Acceder" id="acceder" class="btn btn-primary">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
 
         <footer id="gtco-footer" role="contentinfo">
             <div class="container">
@@ -83,6 +75,7 @@
                     <div class="col-md-12">
                         <p class="pull-left">
                             <small class="block">&copy; 2020 IES Hnos Machado. Todos los derechos reservados.</small>
+
                         </p>
                         <p class="pull-right">
                             <small class="block">Diseñado por <a href="" target="">José Luis Guerra Díaz</a></small>
@@ -105,7 +98,7 @@
     <script src="../js/jquery.magnific-popup.min.js"></script>
     <script src="../js/magnific-popup-options.js"></script>
     <!-- Main -->
-    <script src="../js/login.js"></script>
+    <script src="../js/indexForms.js"></script>
 
 </body>
 
