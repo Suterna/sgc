@@ -1,0 +1,31 @@
+<section id="gtco-usuarios" style="padding: 10em 0 0 0;">
+    <div class="container" name="frmAltaProcedimientos" id="frmAltaProcedimientos">
+        <div class="row">
+            <div class="col-md-6 col-md-push-3 animate-box fadeIn animated-fast">
+                <h4 id="respuesta"></h4>
+                <form id="formAltaProcedimientos">
+                    <div class="form-group">
+                        <h4>Seleccione un capítulo:</h4>
+                        <label for="selectCapitulos" class="sr-only"></label>
+                        <select class="form-control" id="selectCapitulos" onchange="cargarFormularioProcedimiento()">
+                            <option value="-1">Seleccione un capítulo</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="divNombreProcedimiento" style="display: none;">
+                        <h4>Nombre del procedimiento:</h4>
+                        <label for="nombreProcedimiento" class="sr-only"></label>
+                        <input type="text" name="nombreProcedimiento" class="form-control" placeholder="Introduzca el nombre del nuevo procedimiento" id="nombreProcedimiento">
+                    </div>
+                    <div class="form-group" id="divDescripcionProcedimiento" style="display: none;">
+                        <h4>Descripción:</h4>
+                        <label for="descripcion" class="sr-only"></label>
+                        <input type="text" name="descripcion" class="form-control" placeholder="Introduzca la descripción del procedimiento" id="descripcion">
+                    </div>
+                    <div class="form-group col-md-12 col-md-push-4 btnSubmit">
+                        <input type="submit" name="intro" value="Alta" id="btnAltaProcedimiento" class="btn btn-primary">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

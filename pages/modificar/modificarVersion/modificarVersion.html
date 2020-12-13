@@ -1,0 +1,43 @@
+<section id="gtco-usuarios" style="padding: 10em 0 0 0;">
+    <div class="container" name="frmModificarVersion" id="frmModificarVersion">
+        <div class="row">
+            <div class="col-md-6 col-md-push-3 animate-box fadeIn animated-fast">
+                <h4 id="modificarVersionRespuesta"></h4>
+                <form id="formModificarVersion">
+                    <div class="form-group">
+                        <h4>Seleccione un capítulo:</h4>
+                        <label for="selectCapitulosModificarVersion" class="sr-only"></label>
+                        <select class="form-control" name="selectCapitulosModificarVersion" id="selectCapitulosModificarVersion" onchange="cargarSelectProcedimientosModificarVersion()">
+                            <option value="-1">Seleccione un capítulo</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="divSelectProcedimientosModificarVersion" style="display: none;">
+                        <h4>Seleccione un procedimiento:</h4>
+                        <label for="divSelectProcedimientosModificarVersion" class="sr-only"></label>
+                        <select class="form-control" id="selectProcedimientosModificarVersion" name="selectProcedimientosModificarVersion" onchange="cargarSelectDocumentosModificarVersion()">
+                            <option value="-1">Seleccione un procedimiento</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="divSelectDocumentosModificarVersion" style="display: none;">
+                        <h4>Seleccione un documento:</h4>
+                        <label for="divSelectDocumentosModificarVersion" class="sr-only"></label>
+                        <select class="form-control" id="selectDocumentosModificarVersion" name="selectDocumentosModificarVersion" onchange="cargarSelectVersiones()">
+                            <option value="-1">Seleccione una documento</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="divSelectVersion" style="display: none;">
+                        <h4>Seleccione una versión:</h4>
+                        <label for="selectVersiones" class="sr-only"></label>
+                        <select class="form-control" id="selectVersiones" name="selectVersiones">
+                            <option value="-1">Seleccione una versión</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-12 col-md-push-2 btnSubmit">
+                        <input type="submit" name="intro" value="Modificar" id="btnModificarVersion" class="btn btn-primary">
+                        <input type="submit" name="intro" value="Borrar" id="btnBorrarVersion" class="btn btn-primary">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

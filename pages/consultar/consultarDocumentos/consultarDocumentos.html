@@ -1,0 +1,32 @@
+<section id="gtco-usuarios" style="padding: 10em 0 0 0;">
+    <div class="container" name="frmConsultarDocumentos" id="frmConsultarDocumentos">
+        <div class="row">
+            <div class="col-md-6 col-md-push-3 animate-box fadeIn animated-fast">
+                <form id="formConsultarDocumentos">
+                    <div class="form-group">
+                        <h4>Seleccione un capítulo:</h4>
+                        <label for="selectCapitulosConsultarDocumentos" class="sr-only"></label>
+                        <select class="form-control" name="selectCapitulosConsultarDocumentos" id="selectCapitulosConsultarDocumentos" onchange="rellenarSelectProcedimientosConsultarDocumentos()">
+                            <option value="-2">Seleccione un capítulo</option>
+                        </select>
+                    </div>
+                    <div class="form-group" name="divProcedimientosConsultarDocumentos" id="divProcedimientosConsultarDocumentos" style="display: none;">
+                        <h4>Seleccione un procedimiento:</h4>
+                        <label for="selectProcedimientosConsultarDocumentos" class="sr-only"></label>
+                        <select class="form-control" name="selectProcedimientosConsultarDocumentos" id="selectProcedimientosConsultarDocumentos">
+                            <option value="-2">Seleccione un procedimiento:</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-12 col-md-push-4 btnSubmit">
+                        <input type="submit" name="intro" value="Buscar" id="btnConsultarDocumentos" class="btn btn-primary">
+                    </div>
+                    <div class="form-group" name="divConsultarDocumentos" id="divConsultarDocumentos" style="display: none;">
+                        <h4>Tabla de documentos:</h4>
+                        <table id="tablaConsultarDocumentos" name="tablaConsultarDocumentos" class="sort"></table>
+                        <p id="respuestaConsultarDocumentos" name="respuestaConsultarDocumentos"></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,36 @@
+<section id="gtco-usuarios" style="padding: 10em 0 0 0;">
+    <div class="container" name="frmModificarDocumento" id="frmModificarDocumento">
+        <div class="row">
+            <div class="col-md-6 col-md-push-3 animate-box fadeIn animated-fast">
+                <h4 id="respuestaModificarDocumento"></h4>
+                <form id="formModificarDocumento">
+                    <div class="form-group">
+                        <h4>Seleccione un capítulo:</h4>
+                        <label for="selectCapitulosModificarDocumento" class="sr-only"></label>
+                        <select class="form-control" name="selectCapitulosModificarDocumento" id="selectCapitulosModificarDocumento" onchange="cargarSelectProcedimientosModificarDocumento()">
+                            <option value="-1">Seleccione un capítulo</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="divSelectProcedimientosModificarDocumento" style="display: none;">
+                        <h4>Seleccione un procedimiento:</h4>
+                        <label for="divSelectProcedimientosModificarDocumento" class="sr-only"></label>
+                        <select class="form-control" id="selectProcedimientosModificarDocumento" name="selectProcedimientosModificarDocumento" onchange="cargarSelectDocumentosModificarDocumento()">
+                            <option value="-1">Seleccione un procedimiento</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="divSelectDocumentosModificarDocumento" style="display: none;">
+                        <h4>Seleccione un documento:</h4>
+                        <label for="selectDocumentosModificarDocumento" class="sr-only"></label>
+                        <select class="form-control" id="selectDocumentosModificarDocumento" name="selectDocumentosModificarDocumento">
+                            <option value="-1 ">Seleccione una documento</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-12 col-md-push-2 btnSubmit">
+                        <input type="submit" name="intro" value="Modificar" id="btnModificarDocumento" class="btn btn-primary">
+                        <input type="submit" name="intro" value="Borrar" id="btnBorrarDocumento" class="btn btn-primary">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

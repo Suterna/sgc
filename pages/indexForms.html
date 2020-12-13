@@ -14,8 +14,6 @@
     <link rel="stylesheet" href="../css/icomoon.css">
     <!-- Bootstrap  -->
     <link rel="stylesheet" href="../css/bootstrap.css">
-    <!-- Magnific Popup -->
-    <link rel="stylesheet" href="../css/magnific-popup.css">
     <!-- Theme style  -->
     <link rel="stylesheet" href="../css/indexForms.css">
 
@@ -57,10 +55,10 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Consultar</a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="#">Capítulos</a>
-                                    <a class="dropdown-item" href="#">Procedimientos</a>
-                                    <a class="dropdown-item" href="#">Documentos</a>
-                                    <a class="dropdown-item" href="#">Versiones</a>
+                                    <a class="dropdown-item" href="javascript:abrirConsultarCapitulos();">Capítulos</a>
+                                    <a class="dropdown-item" href="javascript:abrirConsultarProcedimientos();">Procedimientos</a>
+                                    <a class="dropdown-item" href="javascript:abrirConsultarDocumentos();">Documentos</a>
+                                    <a class="dropdown-item" href="javascript:abrirConsultarVersiones();">Versiones</a>
                                 </div>
                             </li>
                         </ul>
@@ -68,6 +66,8 @@
                 </div>
             </div>
         </div>
+
+        <div id="formularios" class=" mx-auto"></div>
 
         <footer id="gtco-footer" role="contentinfo">
             <div class="container">
@@ -94,9 +94,11 @@
     <script src="../js/bootstrap.min.js"></script>
     <!-- Waypoints -->
     <script src="../js/jquery.waypoints.min.js"></script>
-    <!-- Magnific Popup -->
-    <script src="../js/jquery.magnific-popup.min.js"></script>
-    <script src="../js/magnific-popup-options.js"></script>
+    <script src="../js/tablesort.js"></script>
+    <script src="../js/sorts/tablesort.date.js"></script>
+    <script src="../js/sorts/tablesort.dotsep.js"></script>
+    <script src="../js/sorts/tablesort.filesize.js"></script>
+    <script src="../js/sorts/tablesort.number.js"></script>
     <!-- Main -->
     <script src="../js/indexForms.js"></script>
 

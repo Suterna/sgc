@@ -1,0 +1,25 @@
+<section id="gtco-usuarios" style="padding: 10em 0 0 0;">
+    <div class="container" name="frmConsultarProcedimientos" id="frmConsultarProcedimientos">
+        <div class="row">
+            <div class="col-md-6 col-md-push-3 animate-box fadeIn animated-fast">
+                <form id="formConsultarProcedimientos">
+                    <div class="form-group">
+                        <h4>Seleccione un capítulo:</h4>
+                        <label for="selectCapitulosConsultarProcedimientos" class="sr-only"></label>
+                        <select class="form-control" name="selectCapitulosConsultarProcedimientos" id="selectCapitulosConsultarProcedimientos">
+                            <option value="-2">Seleccione un capítulo</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-12 col-md-push-4 btnSubmit">
+                        <input type="submit" name="intro" value="Buscar" id="btnConsultarProcedimientos" class="btn btn-primary">
+                    </div>
+                    <div class="form-group" name="divConsultarProcedimientos" id="divConsultarProcedimientos" style="display: none;">
+                        <h4>Tabla de procedimientos:</h4>
+                        <table id="tablaConsultarProcedimientos" name="tablaConsultarProcedimientos" class="sort"></table>
+                        <p id="respuestaConsultarProcedimientos" name="respuestaConsultarProcedimientos"></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,44 @@
+<section id="gtco-usuarios" style="padding: 10em 0 0 0;">
+    <div class="container" name="frmAltaUsuario" id="frmAltaUsuario">
+        <div class="row">
+            <div class="col-md-6 col-md-push-3 animate-box fadeIn animated-fast">
+                <h4 id="respuesta"></h4>
+                <form id="formAltaUsuario">
+                    <div class="form-group">
+                        <h4>Nombre de usuario:</h4>
+                        <label for="nombreUsuario" class="sr-only"></label>
+                        <input type="text" name="nombreUsuario" class="form-control" placeholder="Introduzca el nombre que se usará para iniciar sesión" id="nombreUsuario">
+                    </div>
+                    <div class="form-group">
+                        <h4>Nombre:</h4>
+                        <label for="nombre" class="sr-only"></label>
+                        <input type="text" name="nombre" class="form-control" placeholder="Introduzca el nombre del usuario" id="nombre">
+                    </div>
+                    <div class="form-group">
+                        <h4>Apellidos:</h4>
+                        <label for="apellidos" class="sr-only"></label>
+                        <input type="text" name="apellidos" class="form-control" placeholder="Introduzca los apellidos del usuario" id="apellidos">
+                    </div>
+                    <div class="form-group">
+                        <h4>Perfil:</h4>
+                        <label for="perfil" class="sr-only"></label>
+                        <select class="form-control" id="perfil">
+                            <option value="-1">Seleccione un perfil</option>
+                            <option value="0">Usuario</option>
+                            <option value="1">Gestor</option>
+                            <option value="2">Administrador</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <h4>Contraseña:</h4>
+                        <label for="contraseña" class="sr-only"></label>
+                        <input type="text" name="contraseña" class="form-control" placeholder="Introduzca la contraseña del usuario" id="contraseña">
+                    </div>
+                    <div class="form-group col-md-12 col-md-push-4 btnSubmit">
+                        <input type="submit" name="intro" value="Alta" id="btnAltaUsuario" class="btn btn-primary">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
