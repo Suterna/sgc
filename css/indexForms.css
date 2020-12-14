@@ -331,7 +331,9 @@
         #btnActualizarDocumento,
         #btnModificarVersion,
         #btnActualizarVersion,
-        #btnConsultarProcedimientos {
+        #btnConsultarProcedimientos,
+        #btnConsultarDocumentos,
+        #btnConsultarVersiones {
             background: #7ed321;
             color: #fff;
             border: 2px solid #7ed321!important
@@ -433,7 +435,13 @@
         #btnActualizarVersion:hover,
         #btnConsultarProcedimientos:active,
         #btnConsultarProcedimientos:focus,
-        #btnConsultarProcedimientos:hover {
+        #btnConsultarProcedimientos:hover,
+        #btnConsultarDocumentos:active,
+        #btnConsultarDocumentos:focus,
+        #btnConsultarDocumentos:hover,
+        #btnConsultarVersiones:active,
+        #btnConsultarVersiones:focus,
+        #btnConsultarVersiones:hover {
             background: #8bde2f!important;
             border-color: #8bde2f!important
         }
@@ -448,7 +456,9 @@
         #btnModificarDocumento,
         #btnAltaVersion,
         #btnModificarVersion,
-        #btnConsultarProcedimientos {
+        #btnConsultarProcedimientos,
+        #btnConsultarDocumentos,
+        #btnConsultarVersiones {
             margin: 1em 5em 0 0
         }
         
@@ -521,11 +531,11 @@
         
         table th {
             background: #eee;
-            background: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), to(#eee));
-            background: -moz-linear-gradient(top, #f6f6f6, #eee);
-            text-shadow: 0 1px 0 #fff;
+            background: -webkit-gradient(linear, left top, left bottom, from( #7ed321), to(#8bde2f));
+            background: -moz-linear-gradient(top, #7ed321, #8bde2f);
             font-weight: bold;
             vertical-align: bottom;
+            color: white;
         }
         
         table td {

@@ -18,6 +18,23 @@ $("#logout").click(function() {
     localStorage.setItem("sesion", "");
 });
 
+function abrirGenerarInforme() {
+    // Oculto todos los formularios menos este
+    $("div:not('#frmGenerarInforme')").parent("section").hide("normal");
+
+    // Verifico si ya he cargado el formulario antes
+    if ($('#frmGenerarInforme').length == 0) {
+        $("<div>").appendTo('#formularios').load("generar/generarInforme/generarInforme.html",
+            function() {
+                $.getScript("generar/generarInforme/generarInforme.js");
+            });
+
+    } else {
+        // Lo muestro si está oculto
+        $('#frmGenerarInforme').parent().show("normal");
+    }
+}
+
 function abrirConsultarCapitulos() {
     // Oculto todos los formularios menos este
     $("div:not('#frmConsultarCapitulos')").parent("section").hide("normal");

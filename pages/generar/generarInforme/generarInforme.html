@@ -1,0 +1,45 @@
+<section id="gtco-usuarios" style="padding: 10em 0 0 0;">
+    <div class="container" name="frmGenerarInforme" id="frmGenerarInforme">
+        <div class="row">
+            <div class="col-md-6 col-md-push-3 animate-box fadeIn animated-fast">
+                <h4 id="respuestaGenerarInforme"></h4>
+                <form id="formGenerarInforme">
+                    <div class="form-group">
+                        <h4>Seleccione el documento a generar:</h4>
+                        <label for="selectTipoDocumentoGenerar" class="sr-only"></label>
+                        <select class="form-control" name="selectTipoDocumentoGenerar" id="selectTipoDocumentoGenerar" onchange="rellenarSelectCapitulosGenerarInforme()">
+                            <option value="-1">Seleccione un tipo de documento</option>
+                            <option value="1">Arbol documental de un procedimiento</option>
+                            <option value="2">Versiones de un documento</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="divCapitulosGenerarInforme" style="display: none;">
+                        <h4>Seleccione un capítulo:</h4>
+                        <label for="selectCapitulosGenerarInforme" class="sr-only"></label>
+                        <select class="form-control" name="selectCapitulosGenerarInforme" id="selectCapitulosGenerarInforme" onchange="rellenarSelectProcedimientosGenerarInforme()">
+                            <option value="-1">Seleccione un capítulo</option>
+                        </select>
+                    </div>
+                    <div class="form-group" name="divProcedimientosGenerarInforme" id="divProcedimientosGenerarInforme" style="display: none;">
+                        <h4>Seleccione un procedimiento:</h4>
+                        <label for="selectProcedimientosGenerarInforme" class="sr-only"></label>
+                        <select class="form-control" name="selectProcedimientosGenerarInforme" id="selectProcedimientosGenerarInforme" onchange="rellenarSelectDocumentosGenerarInforme()">
+                            <option value="-1">Seleccione un procedimiento:</option>
+                        </select>
+                    </div>
+                    <div class="form-group" name="divDocumentosGenerarInforme" id="divDocumentosGenerarInforme" style="display: none;">
+                        <h4>Seleccione un documento:</h4>
+                        <label for="selectDocumentosGenerarInforme" class="sr-only"></label>
+                        <select class="form-control" name="selectDocumentosGenerarInforme" id="selectDocumentosGenerarInforme" onchange="desplegarDivGenerarInforme()">
+                            <option value="-1">Seleccione un documento:</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="divGenerarInforme" style="display: none;">
+                        <h4>Pulse sobre el icono para descargar el documento generado:</h4>
+                        <a href="javascript:descargarInformeArbol();"><img id="imagenPdf" src="../images/pdf.png" style="margin: 2em 0em 0em 15em; width: 25%; height: 25%;"></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
